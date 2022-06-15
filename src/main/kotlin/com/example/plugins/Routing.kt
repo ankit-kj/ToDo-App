@@ -10,12 +10,13 @@ import io.ktor.server.response.*
 import io.ktor.server.request.*
 import repository.ToDoRepository
 import repository.InMemoryToDoRepository
+import repository.MySQLToDoRepository
 
 fun Application.configureRouting() {
 
     routing {
 
-        val repository : ToDoRepository = InMemoryToDoRepository()
+        val repository : ToDoRepository = MySQLToDoRepository()
 
         get("/") {
             call.respondText("Hello World! making a kotlin todoList")

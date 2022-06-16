@@ -15,7 +15,7 @@ class DatabaseManager {
     private val hostname =  "127.0.0.1"
     private val databaseName = "schema_for_todo_app"
     private val username = "root"
-    private val password = "ankit@porter"
+    private val password = ""
 
     private val ktormDatabase : Database
 

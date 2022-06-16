@@ -32,6 +32,12 @@ dependencies {
 
     // https://mvnrepository.com/artifact/io.ktor/ktor-gson
     //implementation("io.ktor:ktor-gson:$ktor_version")
+//    implementation group: 'io.ktor', name: 'ktor-auth', version: ktor_version
+//    implementation group: 'io.ktor', name: 'ktor-auth-jwt', version: ktor_version
+
+    implementation("io.ktor:ktor-server-auth:$ktor_version")
+    implementation("io.ktor:ktor-server-auth-jwt:$ktor_version")
+
     // Database
     implementation("mysql:mysql-connector-java:8.0.11")
     implementation("org.ktorm:ktorm-core:3.2.0")
